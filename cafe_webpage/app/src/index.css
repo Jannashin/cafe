@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 33% 99%;
+    --foreground: 24 10% 10%;
+
+    --card: 30 25% 98%;
+    --card-foreground: 24 10% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 24 10% 10%;
+
+    --primary: 24 35% 55%;
+    --primary-foreground: 30 25% 98%;
+
+    --secondary: 30 20% 94%;
+    --secondary-foreground: 24 10% 10%;
+
+    --muted: 30 10% 94%;
+    --muted-foreground: 24 5% 45%;
+
+    --accent: 24 35% 92%;
+    --accent-foreground: 24 35% 25%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 30 15% 90%;
+    --input: 30 15% 90%;
+    --ring: 24 35% 65%;
+
+    --radius: 0.5rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  .hero-section {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7)), url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&q=80');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .glass-card {
+    @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-sm;
+  }
+
+  .button-hover-effect {
+    @apply relative overflow-hidden transition-all duration-300;
+  }
+
+  .button-hover-effect:after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300;
+  }
+  
+  .button-hover-effect:hover:after {
+    @apply w-full;
+  }
+  
+  .menu-card {
+    @apply bg-card rounded-lg p-6 shadow-sm transition-all duration-300 hover:shadow-md;
+  }
+  
+  .menu-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .gallery-item {
+    @apply relative overflow-hidden rounded-lg;
+  }
+
+  .gallery-item img {
+    @apply transition-all duration-500;
+  }
+
+  .gallery-item:hover img {
+    transform: scale(1.05);
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+
+  .opacity-0 {
+    opacity: 0;
+  }
+}
