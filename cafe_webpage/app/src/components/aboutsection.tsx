@@ -46,7 +46,7 @@ const AboutSection = () => {
               Our <span className="text-primary">Story</span>
             </h2>
             <p className="text-muted-foreground mb-4">
-              Founded in 2025, Serene began as a dream to create a space where time slows down and
+              Founded in 2024, Serene began as a dream to create a space where time slows down and
               connections deepen. Our founders, Emma and Liam, met while studying culinary arts and
               bonded over their shared passion for quality coffee and mindful moments.
             </p>
