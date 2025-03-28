@@ -52,16 +52,16 @@ const ContactSection = () => {
             className="rounded-lg overflow-hidden shadow-md h-[400px] bg-card opacity-0"
             ref={mapRef}
           >
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.2158146090353!2d-73.9885193!3d40.7410013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a3f81d549f%3A0xb2a39bb5cacc7da0!2sFlatiron%20Building!5e0!3m2!1sen!2sus!4v1650000000000!5m2!1sen!2sus" 
-              width="100%" 
-              height="100%" 
-              style={{ border: 0 }} 
-              allowFullScreen 
-              loading="lazy" 
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Serene Café Location"
-            ></iframe>
+          <iframe 
+           src="https://www.openstreetmap.org/export/embed.html?bbox=78.0287,27.1662,78.0562,27.1838&layer=mapnik" 
+           width="600" 
+           height="450" 
+           frameBorder="0" 
+            scrolling="no" 
+            marginHeight={0} 
+            marginWidth={0}
+            >
+          </iframe>
           </div>
 
           <div 
@@ -80,7 +80,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="font-medium mb-1">Address</h4>
-                  <p className="text-muted-foreground">175 5th Avenue<br />New York, NY 10010</p>
+                  <p className="text-muted-foreground">T3 3B Saket<br />Delhi 121004 </p>
                 </div>
               </div>
               
@@ -104,7 +104,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="font-medium mb-1">Phone</h4>
-                  <p className="text-muted-foreground">(212) 555-1234</p>
+                  <p className="text-muted-foreground">+91 6754329876 </p>
                 </div>
               </div>
               

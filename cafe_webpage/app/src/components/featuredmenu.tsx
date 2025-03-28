@@ -5,7 +5,7 @@ const menuItems = [
     id: 1,
     name: "Signature Cappuccino",
     description: "Velvety espresso topped with perfectly steamed milk and a delicate layer of foam.",
-    price: "$4.50",
+    price: "$4.75",
     category: "drinks",
     image: "https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&q=80&w=600"
   },
@@ -13,7 +13,7 @@ const menuItems = [
     id: 2,
     name: "Matcha Latte",
     description: "Premium ceremonial grade matcha whisked with steamed milk for a calm energy boost.",
-    price: "$5.25",
+    price: "$4.75",
     category: "drinks",
     image: "https://images.unsplash.com/photo-1515823064-d6e0c04616a7?auto=format&fit=crop&q=80&w=600"
   },
@@ -29,9 +29,9 @@ const menuItems = [
     id: 4,
     name: "Avocado Toast",
     description: "Artisanal sourdough topped with smashed avocado, poached egg, and microgreens.",
-    price: "$9.50",
+    price: "$4.75",
     category: "food",
-    image: "https://images.unsplash.com/photo-1603046891744-450f9caccc8d?auto=format&fit=crop&q=80&w=600"
+    image: "https://plus.unsplash.com/premium_photo-1676106623114-e2edc4f04fe0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   }
 ];
 
